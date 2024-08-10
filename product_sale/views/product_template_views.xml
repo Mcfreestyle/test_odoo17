@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_template_form_view_smart_button" model="ir.ui.view">
+            <field name="name">product.template.sale.order.smart.button</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="sale.product_template_form_view_sale_order_button"/>
+            <field name="arch" type="xml">
+                <div name="button_box" position="inside">
+                    <button  class="oe_stat_button" name="action_open_sales" type="object" icon="fa-file-text-o">
+                        <field string="Sales" name="product_sale_count" widget="statinfo"/>
+                    </button>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

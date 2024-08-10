@@ -1,0 +1,18 @@
+<odoo>
+    <record id="access_product_label" model="ir.model.access">
+        <field name="name">access.product.label</field>
+        <field name="model_id" ref="product_sale.model_product_label"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+    <record id="access_product_label_setting" model="ir.model.access">
+        <field name="name">access.product.label.setting</field>
+        <field name="model_id" ref="product_sale.model_product_label_setting"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+</odoo>
